@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinas PUPR Kab. Mojokerto - Peta Proyek</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-header">
+            <div class="logo-center">
+                <h1>🏛️ Dinas PUPR Kab. Mojokerto</h1>
+                <p>Peta Sebaran Proyek Infrastruktur</p>
+            </div>
+            <div class="last-update">
+                <span>Last Update: <strong id="lastUpdate">Loading...</strong></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Legend Tahun (Simple) -->
+    <div class="legend-simple">
+        <div class="legend-simple-title">Keterangan Marker:</div>
+        <div class="legend-simple-items">
+            <div class="legend-simple-item">
+                <div class="legend-dot" style="background: #3b82f6;"></div>
+                <span>Data 2023</span>
+            </div>
+            <div class="legend-simple-item">
+                <div class="legend-dot" style="background: #10b981;"></div>
+                <span>Data 2024</span>
+            </div>
+            <div class="legend-simple-item">
+                <div class="legend-dot" style="background: #f59e0b;"></div>
+                <span>Data 2025</span>
+            </div>
+            <div class="legend-simple-item">
+                <div class="legend-dot" style="background: #8b5cf6;"></div>
+                <span>Data 2026+</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Summary -->
+    <div class="stats-container-new">
+        <div class="stat-box">
+            <div class="stat-icon">📊</div>
+            <div class="stat-content">
+                <span class="stat-label">Total Proyek</span>
+                <span class="stat-number" id="totalProyek">Loading...</span>
+            </div>
+        </div>
+        
+        <div class="stat-box">
+            <div class="stat-icon">📅</div>
+            <div class="stat-content">
+                <span class="stat-label">Sebaran Tahun</span>
+                <span class="stat-detail" id="sebaranTahun">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <div class="map-wrapper">
+        <div id="map"></div>
+    </div>
+
+    <!-- Footer Info -->
+    <div class="footer-info">
+        <div class="info-item">
+            <span class="icon">👥</span>
+            <span>Total Pengunjung: <strong>492,282</strong></span>
+        </div>
+        <div class="info-item">
+            <span class="icon">📅</span>
+            <span>Pengunjung Bulan Ini: <strong>23,404</strong></span>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/map.js"></script>
+</body>
+</html>
